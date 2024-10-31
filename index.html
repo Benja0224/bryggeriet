@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vinprovning</title>
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="sliders.css">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>.btn{margin: 5px;}#lang_box{display: inline-block;}h1{display: inline;} #result{text-align: center; font-size: larger;} #cirklar>div{text-align: center;} .c-rng--circular{margin: 10px;} .answer_block{margin: 10px;} .btn-success{margin:10px;} </style>
+
+    </head>
+    <body>
+         
+        <h1>Vinprovning</h1>
+        <div id="lang_box">
+            <input type="radio" class="btn-check btn-outline-success" name="options-outlined" id="SWE" onclick="change_lang(this)" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="SWE">Swe</label>
+
+            <input type="radio" class="btn-check btn-outline-success" name="options-outlined" id="ENG" onclick="change_lang(this)" autocomplete="off">
+            <label class="btn btn-outline-primary" for="ENG">Eng</label>
+        </div> 
+        <div>
+            <h3>Vin</h3>
+            <select class="form-select" id="wine_choice" onchange="set_circle_names()">
+                <option selected>Vilket vin / Which wine?</option>
+                <option value="1">Nr 1 - Leitz</option>
+                <option value="2">Nr 2 - Hunters</option>
+                <option value="3">Nr 3 - Epicuro</option>
+                <option value="4">Nr 4 - Bonterra</option>
+                <option value="5">Nr 5 - Delas Les Launes</option>
+                <option value="6">Nr 6 - Lionheart</option>
+            </select>
+        </div>
+        <div class="answer_block" id="smak">
+            <h3>Smak</h3>
+            <div>
+
+            </div>
+        </div>
+        <div class="answer_block" id="notes">
+            <h3>Inslag</h3>
+            <div>
+
+            </div>
+        </div>
+        <div class="answer_block" id="cirklar">
+            <h3>Cirklar</h3>
+            <div>
+                <h4>Fyllighet</h4>
+                <div class="circle_container">
+                    <svg width="200" height="200">
+                        <g transform="translate(100,100)" stroke="#00f" stroke-width="2">
+                          
+                        </g>
+                    </svg>
+                </div>
+                <h4>Strävhet</h4>
+                <div class="circle_container">
+                    <svg width="200" height="200">
+                        <g transform="translate(100,100)" stroke="#00f" stroke-width="2">
+                          
+                        </g>
+                    </svg>
+                </div>
+                <h4>Fruktsyra</h4>
+                <div class="circle_container">
+                    <svg width="200" height="200">
+                        <g transform="translate(100,100)" stroke="#00f" stroke-width="2">
+                          
+                        </g>
+                    </svg>
+                </div>
+           </div>
+        </div>
+        
+        
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" onclick="check_answers()">Check answers!</button>
+        </div>
+
+        <div id="result">
+            <p>Points: </p>
+        </div>
+
+        <script src="vinprovning.js"></script>
+        <script src="sliders.js"></script>
+    </body>
+</html>
