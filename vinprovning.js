@@ -7,7 +7,7 @@ let sort_taste_eng = [taste_eng[3], taste_eng[1],taste_eng[5],taste_eng[0],taste
 taste_swe = sort_taste_swe;
 taste_eng = sort_taste_eng;
 
-let notes_swe = ["björnbär", "blåbär", "citron", "eneträ", "fat",         "gröna äpplen", "hallon", "honung", "kaffe", "krusbär", "kryddnejlika", "kryddpeppar", "lagerblad", "lakrits", "lavendel", "lime", "mintchoklad", "mjölkchoklad", "mörk choklad", "mörkakörsbär", "mynta", "örter", "päron", "persika", "plommon", "rökig mineral", "rökta charkuterier", "svarta oliver", "svartpeppar", "vanilj", "vita blommor", "vitpeppar"];
+let notes_swe = ["björnbär", "blåbär", "citron", "eneträ", "fat",         "gröna äpplen", "hallon", "honung", "kaffe", "krusbär", "kryddnejlika", "kryddpeppar", "lagerblad", "lakrits", "lavendel", "lime", "mintchoklad", "mjölkchoklad", "mörk choklad", "mörka körsbär", "mynta", "örter", "päron", "persika", "plommon", "rökig mineral", "rökta charkuterier", "svarta oliver", "svartpeppar", "vanilj", "vita blommor", "vitpeppar"];
 let notes_eng = ['blackberry','blueberry','lemon','juniper wood','barrel','green apples','raspberry','honey','coffee','gooseberry','cloves','allspice','bayleaf',             'liquorice','lavendel','lime','mint chocolate','milk chocolate','dark chocolate','dark cherries','mint','herbs','pears','peach','plums','smoked mineral','smoky charcuteries','black olives','black pepper','vanilla','white flowers','white pepper'];
 let note_container = document.getElementById("notes").children[1];
 let smak_container = document.getElementById("smak").children[1];
